@@ -1,0 +1,23 @@
+:root {
+  --text-font-family: "Roboto", sans-serif;
+  --color-title: SlateBlue;
+}
+
+.body {
+  padding: 10px;
+  font-family: var(--text-font-family);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-title);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 40px;
+}
