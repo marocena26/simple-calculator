@@ -20,4 +20,6 @@
   text-transform: uppercase;
   font-weight: 800;
   font-size: 40px;
+  animation: rubberBand;
+  animation-duration: 2s;
 }
