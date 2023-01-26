@@ -37,15 +37,24 @@ function resultText(numberResult) {
 //event handler function
 function handleClick(ev) {
   ev.preventDefault();
+  const numberOneValue = parseInt(numberOne.value);
+  const numberTwoValue = parseInt(numberTwo.value);
+  const selectValue = select.value;
+  const numberResult = calculate(numberOneValue, numberTwoValue, selectValue);
 
   if (isNaN(numberOne.value) || isNaN(numberTwo.value)) {
     console.log("entra");
     result.innerHTML = "Es necesario introducir dos números válidos";
+  } else if (numberResult < 0) {
+    console.log("Error :(");
+    result.innerHTML = "Error :(";
+  } else if (
+    (selectValue === "%" && numberOneValue === 0) ||
+    numberTwoValue === 0
+  ) {
+    console.log("It’s over 9000!");
+    result.innerHTML = "It’s over 9000!";
   } else {
-    const numberOneValue = parseInt(numberOne.value);
-    const numberTwoValue = parseInt(numberTwo.value);
-    const selectValue = select.value;
-    const numberResult = calculate(numberOneValue, numberTwoValue, selectValue);
     resultText(numberResult);
     console.log(numberResult);
   }
