@@ -44,7 +44,9 @@ function handleClick(ev) {
 
   if (isNaN(numberOne.value) || isNaN(numberTwo.value)) {
     console.log("entra");
-    result.innerHTML = "Es necesario introducir dos números válidos";
+    result.innerHTML = "Two valid numbers must be entered";
+  } else if (numberOne.value === "" || numberTwo.value === "") {
+    result.innerHTML = "All fields must be filled in";
   } else if (numberResult < 0) {
     console.log("Error :(");
     result.innerHTML = "Error :(";
