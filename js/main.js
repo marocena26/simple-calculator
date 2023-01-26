@@ -5,13 +5,10 @@ const numberOne = document.querySelector(".js-number-1");
 const numberTwo = document.querySelector(".js-number-2");
 const result = document.querySelector(".js-result");
 const btn = document.querySelector(".js-btn");
+const reset = document.querySelector(".js-btn-reset");
 const select = document.querySelector(".js-select");
 
 //FUNCTIONS
-
-let inputOne = "";
-let inputTwo = "";
-let selectInput = "choose";
 
 //function to obtain the result according to the operator
 function calculate(numberOneValue, numberTwoValue, selectValue) {
@@ -54,5 +51,14 @@ function handleClick(ev) {
   }
 }
 
+function handleReset(ev) {
+  ev.preventDefault(ev);
+  numberOne.value = "";
+  numberTwo.value = "";
+  result.innerHTML = "";
+  select.value = "choose";
+}
+
 //EVENTS
 btn.addEventListener("click", handleClick);
+reset.addEventListener("click", handleReset);
