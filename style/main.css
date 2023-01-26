@@ -46,6 +46,7 @@
 .wrap {
   display: flex;
   align-items: center;
+  width: 250px;
   gap: 15px;
   background-color: white;
   padding: 15px;
@@ -54,6 +55,7 @@
 
 @media all and (min-width: 768px) {
   .wrap {
+    width: 380px;
     padding: 25px;
   }
 }
@@ -71,31 +73,37 @@
 
 .input {
   width: 125px;
-  padding: 4px;
+  padding: 6px 4px;
   border-radius: 20px;
-  border: 1px solid;
+  border: 2px solid var(--color-background);
 }
 
 @media all and (min-width: 768px) {
   .input {
     width: 225px;
-    padding: 8px;
+    padding: 11.5px 8px;
   }
 }
 
 .select {
-  width: 125px;
+  width: 137px;
   padding: 4px;
   border-radius: 20px;
   font-size: 16px;
+  border: 2px solid var(--color-background);
 }
 
 @media all and (min-width: 768px) {
   .select {
-    width: 225px;
+    width: 245px;
     padding: 8px;
     font-size: 18px;
   }
+}
+
+.wrap-btn {
+  display: flex;
+  gap: 10px;
 }
 
 .btn {
@@ -130,7 +138,6 @@
   align-items: center;
   width: 100px;
   padding: 10px;
-  margin: 50px 0;
   border-radius: 20px;
   background-color: var(--color-title);
   font-weight: 600;
@@ -138,6 +145,10 @@
   border: none;
   color: var(--color-letter);
   z-index: 100;
+}
+
+.result-text {
+  color: black;
 }
 
 @media all and (min-width: 768px) {

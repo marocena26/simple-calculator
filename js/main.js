@@ -9,6 +9,10 @@ const select = document.querySelector(".js-select");
 
 //FUNCTIONS
 
+let inputOne = "";
+let inputTwo = "";
+let selectInput = "choose";
+
 //function to obtain the result according to the operator
 function calculate(numberOneValue, numberTwoValue, selectValue) {
   let result = "";
