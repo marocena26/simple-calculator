@@ -8,6 +8,18 @@ Create a **basic calculator for simple operations**. The main **requirement** is
 
 > **NOTE:** Direct link to the project by clicking on the following **[link](https://marocena26.github.io/simple-calculator/)**.
 
+## 👾 Description 
+
+**Welcome to Simple calculator!**
+
+In this repository we present you a **simple, intuitive website adapted to any kind of device** (mobile, tablet and PC) so you can take a look at it at any time. **Designed and developed with HTML, CSS and JS**, with just a few clicks you can do simple mathematical operations. 
+
+### What operations can I do?
+
+- Operations with integers numbers.
+- Operations with positive numbers.
+
+
 ## 📝 Requirements
 
 The exercise consists on developing a web-site using the following **elements**:
@@ -20,9 +32,14 @@ The following **requirements** have to be respected:
 2. A **select field** that will **contain** a list of the following **operators** as options:("+", "-", "\*", "/", " %").
 3. A **text field** representing the **right member** of our calculation.
 4. A **submit** field with the value **"Try me!"**.
-5. When we **click on the "Try me!"** button, the calculation is executed and the **result appears in an alert message**.
-6. Both **input fields must only contain positive** integer values (>= 0) for the calculation to be executed. **Otherwise**, an alert message with the following message **"Error :("** should appear.
-7. **Division and modulo by zero** display an **alert message** with the following message: **"It's over 9000!"**.
+
+The mathematical operations shall be solved in the following way:
+
+1. When we **click on the "Try me!" button**: result appears in an alert message.
+6. When the **value** of the operation **results** in a **negative number**: appear the following message **"Error :("**.
+7. **Division and modulo by zero**: appear the following message: **"It's over 9000!"**.
+
+> As an extra, a **reset button** has been added to make the user experience more pleasant 🥰.
 
 ## 🛠️ Tools
 
